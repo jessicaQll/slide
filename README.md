@@ -1,2 +1,3 @@
 # slide
-自定义轮播插件
+Customize the slide plug-in
+
