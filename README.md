@@ -61,8 +61,8 @@ Customize the slide plug-in
         <div class="box-parent">
 
             <ul class="collect-box clear-float">
-
-                <li>此处添加轮播子元素</li>
+            
+                <!-- 此处添加轮播子元素 -->
 
             </ul>
 
