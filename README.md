@@ -56,7 +56,7 @@ Customize the slide plug-in
 
 引用html结构：
 
-<!-- 
+<!-- 此标记仅为了一下html能在此文档中可见
 
  <div class="collect-list">
 
