@@ -62,7 +62,7 @@ Customize the slide plug-in
 
    \<ul class="collect-box clear-float">
 
-    <!-- 此处添加轮播子元素 -->
+    \<!-- 此处添加轮播子元素 -->
 
    \</ul>
 
