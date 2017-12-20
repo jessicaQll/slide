@@ -38,7 +38,7 @@ Customize the slide plug-in
 
     height: 300px;
     
-    position: absolute;
+    position: absolute;
     
     top: 0;
 
