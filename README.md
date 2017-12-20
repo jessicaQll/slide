@@ -145,8 +145,8 @@ moveStep: 轮播移动轮播子元素个数，默认为1
                     <dd class="collect-item-price">￥120.00</dd>
                     
                 </dl>
-                 
-                <!-- 此处省略dl轮播子元素 --> 
+                
+                <!-- 此处省略dl轮播子元素 --> 
                         
                 <dl class="collect-item left">
                 
