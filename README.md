@@ -58,14 +58,14 @@ Customize the slide plug-in
 
  \<div class="collect-list">
 
-    \<div class="box-parent">
+    <div class="box-parent">
 
-        \<ul class="collect-box clear-float">
+        <ul class="collect-box clear-float">
 
-            \<!-- 此处添加轮播子元素 -->
+            <!-- 此处添加轮播子元素 -->
 
-        \</ul>
+        </ul>
 
-    \</div>
+    </div>
   
  \</div>
