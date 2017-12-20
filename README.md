@@ -16,7 +16,7 @@ Customize the slide plug-in
 
 引入轮播样式：
 
-    //样式中的宽度和高度可按实际需求更改
+    //样式中的宽度和高度可按实际需求更改
 
     .collect-list {//轮播可视区样式
 
