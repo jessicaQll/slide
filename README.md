@@ -78,18 +78,34 @@ Customize the slide plug-in
 
 参数说明：
 
-showIndex: 显示区显示的个数
+showIndex: 显示区显示的个数，默认为5
 
-imgQuantity: 轮播实际个数
+imgQuantity: 轮播实际个数，默认为10
 
-slideStep: 轮播移动步长，等于轮播子元素宽度
+slideStep: 轮播移动步长，等于轮播子元素宽度，默认为240
 
-slideInterval: 轮播时间间隔
+slideInterval: 轮播时间间隔，默认为2000
 
-slideDuration: 动画滑动时间
+slideDuration: 动画滑动时间，默认为1000
 
-prevClassName: 左移按钮类名
+prevClassName: 左移按钮类名，默认为空
 
-nextClassName: 右移按钮类名
+nextClassName: 右移按钮类名，默认为空
 
-moveStep: 轮播移动轮播子元素个数
+moveStep: 轮播移动轮播子元素个数，默认为1
+
+例如：
+
+    $(".collect-list").slide_custom({ 
+    
+        prevClassName: "prev-arrow", 
+        
+        nextClassName: "next-arrow", 
+        
+        moveStep: 1, 
+        
+        slideDuration: 1000, 
+        
+        slideInterval: 2000 
+        
+    });
