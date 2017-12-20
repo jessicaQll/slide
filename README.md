@@ -30,7 +30,7 @@ Customize the slide plug-in
 
 .box-parent {//轮播元素父元素，高度height设置可选，宽度width无需设置，插件通过js给width赋值
  
-    position: relative;
+    position: relative;
   
 }
 
