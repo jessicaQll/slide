@@ -111,3 +111,63 @@ moveStep: 轮播移动轮播子元素个数，默认为1
         slideInterval: 2000 
         
     });
+
+    <div class="collect-list">
+    
+        <div class="box-parent">
+        
+            <div class="collect-box clear-float">
+        
+                <dl class="collect-item left">
+                
+                    <dt class="collect-item-img">
+                        
+                        <img src="../images/product_images/product01.png" alt="收藏图片">
+                        
+                    </dt>
+                    
+                    <dd class="collect-item-title">潮流阁化妆技巧0</dd>
+                    
+                    <dd class="collect-item-price">￥120.00</dd>
+                    
+                </dl>
+                
+                <dl class="collect-item left">
+                
+                    <dt class="collect-item-img">
+                    
+                        <img src="../images/product_images/product01.png" alt="收藏图片">
+                        
+                    </dt>
+                    
+                    <dd class="collect-item-title">潮流阁化妆技巧1</dd>
+                    
+                    <dd class="collect-item-price">￥120.00</dd>
+                    
+                </dl>
+                 
+                <!-- 此处省略dl轮播子元素 --> 
+                        
+                <dl class="collect-item left">
+                
+                    <dt class="collect-item-img">
+                    
+                        <img src="../images/product_images/product01.png" alt="收藏图片">
+                        
+                    </dt>
+                    
+                    <dd class="collect-item-title">潮流阁化妆技巧9</dd>
+                    
+                    <dd class="collect-item-price">￥120.00</dd>
+                    
+                </dl>
+                
+            </div>
+            
+        </div>
+        
+        <div class="prev-arrow"></div>
+        
+        <div class="next-arrow"></div>
+        
+    </div>
