@@ -18,7 +18,6 @@ Customize the slide plug-in
 
 .collect-list {//轮播可视区样式
 
-    
     width: 1200px;
     
     height: 300px;
@@ -57,16 +56,20 @@ Customize the slide plug-in
 
 引用html结构：
 
+<!-- 
+
  <div class="collect-list">
 
   <div class="box-parent">
 
    <ul class="collect-box clear-float">
 
-    <!-- 此处添加轮播子元素 -->
+    //此处添加轮播子元素
 
    </ul>
 
   </div>
+  
+-->
 
  </div>
