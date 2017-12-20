@@ -68,9 +68,9 @@ Customize the slide plug-in
 
         </div>
         
-        <div class="prev-arrow"></div><!-- 左移按钮 -->
-        
-        <div class="next-arrow"></div><!-- 右移按钮 -->
+        <div class="prev-arrow"></div><!-- 左移按钮 -->
+       
+        <div class="next-arrow"></div><!-- 右移按钮 -->
   
     </div>
 
