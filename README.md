@@ -16,9 +16,8 @@ Customize the slide plug-in
 
 引入轮播样式：
 
-//轮播可视区样式
+.collect-list {//轮播可视区样式
 
-.collect-list {
     
     width: 1200px;
     
