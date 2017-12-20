@@ -2,6 +2,7 @@
 Customize the slide plug-in
 
 插件说明：
+
 此插件slide基于jQuery库编写，默认显示5个轮播子元素，实际轮播子元素个数为10，每次移动距离为1个轮播子元素
 
 效果说明：
@@ -112,6 +113,8 @@ moveStep: 轮播移动轮播子元素个数，默认为1
         
     });
 
+    注意：一下html通过js动态添加效果相同，需动态添加调用改轮播插件需在js动态添加html之后调用
+    
     <div class="collect-list">
     
         <div class="box-parent">
@@ -170,4 +173,4 @@ moveStep: 轮播移动轮播子元素个数，默认为1
         
         <div class="next-arrow"></div>
         
-    </div>
+    </div>
