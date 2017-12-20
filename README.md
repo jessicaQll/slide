@@ -16,43 +16,45 @@ Customize the slide plug-in
 
 引入轮播样式：
 
-.collect-list {//轮播可视区样式
+    //样式中的宽度和高度可按实际需求更改
 
-    width: 1200px;
-    
-    height: 300px;
-    
-    overflow: hidden;
-    
-    position: relative;
+    .collect-list {//轮播可视区样式
 
-}
+        width: 1200px;
 
-.box-parent {//轮播元素父元素，高度height设置可选，宽度width无需设置，插件通过js给width赋值
- 
-    position: relative;
-  
-}
+        height: 300px;
 
-.collect-box {//轮播元素
+        overflow: hidden;
 
-    height: 300px;
-    
-    position: absolute;
-    
-    top: 0;
+        position: relative;
 
-}
+    }
 
-.clear-float:after {//消去浮动给父元素高度的影响
+    .box-parent {//轮播元素父元素，高度height设置可选，宽度width无需设置，插件通过js给width赋值
 
-    conotent: ";
-    
-    display: block;
-    
-    clear: both;
-    
-}
+        position: relative;
+
+    }
+
+    .collect-box {//轮播元素
+
+        height: 300px;
+
+        position: absolute;
+
+        top: 0;
+
+    }
+
+    .clear-float:after {//消去浮动给父元素高度的影响
+
+        conotent: ";
+
+        display: block;
+
+        clear: both;
+
+    }
 
 引用html结构：
 
