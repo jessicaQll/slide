@@ -56,7 +56,7 @@ Customize the slide plug-in
 
 引用html结构：
 
- \<div class="collect-list">
+    <div class="collect-list">
 
     <div class="box-parent">
 
