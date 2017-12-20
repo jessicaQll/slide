@@ -81,6 +81,8 @@ Customize the slide plug-in
 
 参数说明：
 
+moveStep: 轮播移动轮播子元素个数，默认为1
+
 showIndex: 显示区显示的个数，默认为5
 
 imgQuantity: 轮播实际个数，默认为10
@@ -95,11 +97,19 @@ prevClassName: 左移按钮类名，默认为空
 
 nextClassName: 右移按钮类名，默认为空
 
-moveStep: 轮播移动轮播子元素个数，默认为1
+slideEleClassName: "",//轮播元素类名
+
+slideParentClassName: ""//轮播父元素类名
 
 例如：
 
+    //.collect-lsit为可视区类名
+
     $(".collect-list").slide_custom({ 
+        
+        slideEleClassName: "collect-box",
+
+        slideParentClassName: "box-parent",
     
         prevClassName: "prev-arrow", 
         
