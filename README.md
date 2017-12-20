@@ -14,22 +14,6 @@ Customize the slide plug-in
 
 使用前确认已经引入jQuery库文件，在引入slide.js文件，最后再调用。
 
-引用html结构：
-
-<div class="collect-list">
- 
- <div class="box-parent">
- 
-  <ul class="collect-box clear-float">
-  
-   <!-- 此处添加轮播子元素 -->
-   
-  </ul>
-  
- </div>
- 
-</div>
-
 引入轮播样式：
 
 .collect-list {//轮播可视区样式
@@ -69,3 +53,19 @@ Customize the slide plug-in
     clear: both;
     
 }
+
+引用html结构：
+
+<div class="collect-list">
+ 
+ <div class="box-parent">
+ 
+  <ul class="collect-box clear-float">
+  
+   <!-- 此处添加轮播子元素 -->
+   
+  </ul>
+  
+ </div>
+ 
+</div>
