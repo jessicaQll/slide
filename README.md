@@ -83,7 +83,7 @@ showIndex: 显示区显示的个数
 imgQuantity: 轮播实际个数
 
 slideStep: 轮播移动步长，等于轮播子元素宽度
-            
+
 slideInterval: 轮播时间间隔
 
 slideDuration: 动画滑动时间
