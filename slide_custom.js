@@ -2,14 +2,16 @@
     $.fn.slide_custom = function(options){
 
         var defaults = {
+            moveStep: 1,//元素移动个数
             showIndex: 5, //显示区显示的个数
             imgQuantity : 10,//轮播实际个数
             slideStep : 240,//轮播左移步长
             slideInterval : 2000,//轮播时间间隔
             slideDuration : 1000,//动画滑动时间
-            prevClassName: "",//上一页按钮类名
-            nextClassName: "",//下一页按钮类名
-            moveStep: 1//元素移动个数
+            prevClassName: "",//左侧移动按钮类名
+            nextClassName: "",//右侧移动按钮类名
+            slideEleClassName: "",//轮播元素类名
+            slideParentClassName: ""//轮播父元素类名
         };
 
         var opts = $.extend(defaults, options || {});
@@ -18,11 +20,10 @@
         var currentLeft;//当前left值
         var slideTimer = null;//轮播定时器
         var boxWidth = opts.slideStep * (opts.imgQuantity + opts.showIndex *2);//轮播父元素宽度
-        // var $slideVisible = $(".collect-list");//轮播可视区
-        var $slideEle = $(".collect-list .collect-box");//轮播元素
-        var $slideEleParent = $(".collect-list .box-parent");//轮播父元素
-        var $prevClassName = $("." + opts.prevClassName);//上一页按钮
-        var $nextClassName = $("." + opts.nextClassName);//下一页按钮
+        var $slideEle = $("." + opts.slideEleClassName);//轮播元素
+        var $slideEleParent = $("." + opts.slideParentClassName);//轮播父元素
+        var $prevClassName = $("." + opts.prevClassName);//左侧移动按钮
+        var $nextClassName = $("." + opts.nextClassName);//右侧移动按钮
 
         var $slideLists = $slideEle.children();
         //获取轮播item的前showIndex个元素
@@ -53,28 +54,12 @@
         }
         //箭头点击
         function arrowStep(){
-            // var $tar = $(".collect-list .collect-box");//轮播元素lists
-            // $(".collect-list").
-            // console.log(0 == imgIndex);
-            //控制剪头是否可见
-            // if(0 == slideIndex){
-            //     $(".collect-list .prev-arrow").hide();
-            // }else{
-            //     $(".collect-list .prev-arrow").show();
-            // }
-            // if($(".collect-list .collect-box .collect-item").length-1 == slideIndex){
-            //     $(".collect-list .prev-arrow").hide();
-            // }else{
-            //     $(".collect-list .prev-arrow").show();
-            // }
             //左箭头点击事件
             $prevClassName.click(function(){
                 if($slideEle.is(":animated")){
                     return;
                 }
-                // var $tar = $(this);
                 currentLeft = parseInt($slideEle.css("left"));
-                // $(".collect-list .collect-box").css({ "left" : currentLeft + slideStep, "transition" : "left .3s ease-in" } );
                 imgIndex = imgIndex - opts.moveStep;
                 $slideEle.animate({ "left" : currentLeft + opts.slideStep * opts.moveStep }, opts.slideDuration, function(){
                     if(imgIndex <= 0){
@@ -89,23 +74,7 @@
                 if($slideEle.is(":animated")){
                     return;
                 }
-                // var $tar = $(this);
-                // console.log(imgIndex);
-                // i++;
-                // console.log(i);
                 currentLeft = parseInt($slideEle.css("left"));
-                // $(".collect-list .collect-box").css({ "left" : currentLeft - slideStep, "transition" : "left .3s ease-in" } );
-                // imgIndex++;
-                // console.log(currentLeft);
-                // if(imgIndex >= imgQuantity + showIndex){
-                // console.log(imgIndex);
-                // console.log("test");
-                // console.log(1);
-                // imgIndex =showIndex;
-                // $(".collect-list .collect-box").css({ "left" : -imgIndex * slideStep, "transition" : "none" } );
-                // }else{
-                //     console.log(2);
-                // }
                 imgIndex = imgIndex + opts.moveStep;
                 $slideEle.animate({ "left" : currentLeft - opts.slideStep * opts.moveStep }, opts.slideDuration, function(){
                     if(imgIndex >= opts.imgQuantity + opts.showIndex){
