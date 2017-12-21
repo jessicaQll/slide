@@ -3,7 +3,9 @@ Customize the slide plug-in
 
 插件说明：
 
-此插件slide基于jQuery库编写，默认显示5个轮播子元素，实际轮播子元素个数为10，每次移动距离为1个轮播子元素
+此插件slide基于jQuery库编写，默认显示5个轮播子元素，实际轮播子元素个数为10，每次移动距离为1个轮播子元素，鼠标进入轮播区域，显示左右箭头，鼠标退出轮
+
+播区域，左右箭头隐藏
 
 效果说明：
 
@@ -89,7 +91,7 @@ imgQuantity: 轮播实际个数，默认为10
 
 slideStep: 轮播移动步长，等于轮播子元素宽度，默认为240
 
-slideInterval: 轮播时间间隔，默认为2000
+slideInterval: 轮播时间间隔，默认为2000，注意slideInterval参数要大于slideDuration参数
 
 slideDuration: 动画滑动时间，默认为1000
 
