@@ -85,23 +85,25 @@ Customize the slide plug-in
 
 moveStep: 轮播移动轮播子元素个数，默认为1
 
-showIndex: 显示区显示的个数，默认为5
+showIndex: 显示区显示的个数，默认为null,必选
 
-imgQuantity: 轮播实际个数，默认为10
+imgQuantity: 轮播实际个数，默认为null，必选
 
-slideStep: 轮播移动步长，等于轮播子元素宽度，默认为240
+slideStep: 轮播移动步长，等于轮播子元素宽度，默认为null，必选
 
 slideInterval: 轮播时间间隔，默认为2000，注意slideInterval参数要大于slideDuration参数
 
 slideDuration: 动画滑动时间，默认为1000
 
-prevClassName: 左移按钮类名，默认为空
+prevClassName: 左移按钮类名，默认为“prev-arrow”
 
-nextClassName: 右移按钮类名，默认为空
+nextClassName: 右移按钮类名，默认为“next-arrow”
 
-slideEleClassName: "",//轮播元素类名
+slideEleClassName: 轮播元素类名,默认为“collect-box”
 
-slideParentClassName: ""//轮播父元素类名
+slideParentClassName: 轮播父元素类名,默认为“box-parent”
+
+hasArrow: 控制是否有箭头点击功能，默认为false
 
 例如：
 
@@ -109,19 +111,13 @@ slideParentClassName: ""//轮播父元素类名
 
     $(".collect-list").slide_custom({ 
     
-        slideEleClassName: "collect-box",
-
-        slideParentClassName: "box-parent",
-    
-        prevClassName: "prev-arrow", 
+        showIndex: 5,
         
-        nextClassName: "next-arrow", 
+        imgQuantity: 10,
         
-        moveStep: 1, 
+        slideStep: null,
         
-        slideDuration: 1000, 
-        
-        slideInterval: 2000 
+        hasArrow: true
         
     });
 
