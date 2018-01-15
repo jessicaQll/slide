@@ -108,8 +108,8 @@ slideParentClassName: ""//轮播父元素类名
     //.collect-lsit为可视区类名
 
     $(".collect-list").slide_custom({ 
-        
-        slideEleClassName: "collect-box",
+    
+        slideEleClassName: "collect-box",
 
         slideParentClassName: "box-parent",
     
