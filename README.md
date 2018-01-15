@@ -105,7 +105,7 @@ slideParentClassName: ""//轮播父元素类名
 
 例如：
 
-    //.collect-lsit为可视区类名
+    //.collect-lsit为可视区类名
 
     $(".collect-list").slide_custom({ 
     
