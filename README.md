@@ -41,7 +41,7 @@ Customize the slide plug-in
 
     .collect-box {//轮播元素
 
-        height: 300px;
+        height: 100%;
 
         position: absolute;
 
