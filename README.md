@@ -3,7 +3,7 @@ Customize the slide plug-in
 
 插件说明：
 
-此插件slide基于jQuery库编写，可通过参数hasArrow控制是否有箭头点击功能
+此插件slide基于jQuery库编写，可通过参数hasArrow控制是否有箭头点击功能,参数hasBtn控制是否有切换按钮
 
 效果说明：
 
@@ -126,6 +126,8 @@ slideEleClassName: 轮播元素类名,默认为“collect-box”
 slideParentClassName: 轮播父元素类名,默认为“box-parent”
 
 hasArrow: 控制是否有箭头点击功能，默认为false
+
+hasBtn: 控制是否有切换按钮，默认为true
 
 例如：
 
