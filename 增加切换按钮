@@ -131,10 +131,18 @@
                 }
                 currentLeft = parseInt($slideEle.css("left"));
                 imgIndex = imgIndex - opts.moveStep;
+
                 $slideEle.animate({ "left" : currentLeft + opts.slideStep * opts.moveStep }, opts.slideDuration, function(){
-                    if(imgIndex <= opts.showIndex){
-                        imgIndex = virtualQuantity + opts.showIndex;
+                    if(opts.hasBtn){
+                        $(".btn-active").removeClass("btn-active");
+                    }
+                    if(imgIndex < opts.showIndex){
+                    //     imgIndex = virtualQuantity + opts.showIndex;
+                        imgIndex = virtualQuantity;//单图轮播
                         $slideEle.css("left", -imgIndex * opts.slideStep);
+                    }
+                    if(opts.hasBtn){
+                        $($(".switch-btn")[imgIndex-1]).addClass("btn-active");
                     }
                 } );
             });
