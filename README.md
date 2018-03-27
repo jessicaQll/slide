@@ -11,6 +11,8 @@ Customize the slide plug-in
 
 点击右键头，显示右侧不可见元素
 
+切换按钮
+
 使用方法：
 
 使用前确认已经引入jQuery库文件，在引入slide.js文件，最后再调用。
@@ -56,6 +58,27 @@ Customize the slide plug-in
         clear: both;
 
     }
+    
+    .switch-btn{
+    
+        width: 13px;
+	
+        height: 13px;
+	    
+        border-radius: 50%;
+	    
+        background-color: #808080;
+	    
+        float: left;
+	    
+        margin: 0 5px;
+    }
+
+    .btn-active{
+	    
+        background-color: #eee;
+
+    }
 
 引用html结构：
 
@@ -74,7 +97,8 @@ Customize the slide plug-in
         <div class="prev-arrow"></div><!-- 左移按钮 -->
        
         <div class="next-arrow"></div><!-- 右移按钮 -->
-  
+        
+        <ul class="btn-box"></ul><!-- 切换按钮父元素，切换按钮类名为"switch-btn"，由slide-custome.js文件动态添加 --> 
     </div>
 
 调用方法：
@@ -178,5 +202,7 @@ hasArrow: 控制是否有箭头点击功能，默认为false
         <div class="prev-arrow"></div>
         
         <div class="next-arrow"></div>
+        
+        <ul class="btn-box"></ul>
         
     </div>
